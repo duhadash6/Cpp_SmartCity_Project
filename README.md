@@ -73,9 +73,9 @@ Le projet utilise la Programmation Orientée Objet et implémente deux Design Pa
 
 ---
 
-## 🚀 Installation et Compilation
+##  Installation et Compilation
 
-### 📋 Prérequis
+###  Prérequis
 
 #### Windows
 - **CMake** (version 3.15+) : [Télécharger](https://cmake.org/download/)
@@ -101,7 +101,7 @@ sudo apt-get update
 sudo apt-get install build-essential cmake
 ```
 
-### 🔨 Compilation
+###  Compilation
 
 #### Windows
 1. Double-cliquez sur `recompiler.bat`
@@ -123,7 +123,7 @@ sudo apt-get install build-essential cmake
    ./build/RoutageDynamique
    ```
 
-### ✅ Vérification
+### Vérification
 
 Le projet est **autonome** et contient toutes les dépendances :
 - ✅ Raylib inclus dans `external/raylib/`
@@ -134,7 +134,7 @@ Le projet est **autonome** et contient toutes les dépendances :
 
 ---
 
-## 🎮 Utilisation
+##  Utilisation
 
 ### Lancement du Jeu
 
@@ -174,9 +174,9 @@ Modifiez `config/config.json` pour personnaliser :
 
 ---
 
-## 📁 Architecture du Projet
+##  Architecture du Projet
 
-> 📖 **Pour une explication détaillée de l'architecture interne, consultez [STRUCTURE.md](STRUCTURE.md)**
+>  **Pour une explication détaillée de l'architecture interne, consultez [STRUCTURE.md](STRUCTURE.md)**
 
 Le projet suit une **architecture claire et modulaire** :
 
@@ -299,7 +299,7 @@ planner.setStrategy(std::make_unique<DijkstraStrategy>());
 
 ---
 
-## 🧪 Tests Unitaires
+##  Tests Unitaires
 
 Le projet contient **5 tests unitaires** couvrant les classes principales :
 
@@ -336,7 +336,7 @@ ctest
 
 ---
 
-## 🔧 Technologies Utilisées
+##  Technologies Utilisées
 
 ### Langages et Standards
 - **C++17** : Langage de programmation moderne
@@ -359,7 +359,7 @@ ctest
 
 ---
 
-## 📊 Principes POO Appliqués
+##  Principes POO Appliqués
 
 ### Encapsulation
 - Données privées avec accesseurs publics
@@ -386,7 +386,7 @@ ctest
 
 ---
 
-## 🎨 Visualisation avec Raylib
+##  Visualisation avec Raylib
 
 Le projet utilise **Raylib** pour une visualisation 2D moderne :
 
@@ -406,39 +406,7 @@ Le projet utilise **Raylib** pour une visualisation 2D moderne :
 
 ---
 
-## 📤 Partage du Projet
-
-### Préparation
-
-Le projet est **autonome** et contient toutes les dépendances :
-- ✅ Raylib inclus
-- ✅ Assets inclus
-- ✅ Configuration incluse
-
-### Partage
-
-1. **Zipper le dossier** (sans `build/` pour réduire la taille)
-2. **Envoyer le ZIP** à vos amis
-3. **Instructions pour le destinataire** :
-   - Extraire le ZIP
-   - Suivre les instructions d'installation ci-dessus
-   - Compiler avec `recompiler.bat` (Windows) ou `./build.sh` (Mac)
-   - Jouer !
-
-### Fichiers à Inclure
-
-**Inclure :**
-- ✅ Tous les dossiers (`include/`, `src/`, `tests/`, `demos/`, `assets/`, `config/`, `external/`)
-- ✅ Fichiers de configuration (`CMakeLists.txt`, `recompiler.bat`, `build.sh`)
-- ✅ Documentation (`README.md`)
-
-**Exclure (optionnel) :**
-- ❌ `build/` (sera recréé lors de la compilation)
-- ❌ `.git/` (si vous utilisez Git)
-
----
-
-## 📚 Documentation
+##  Documentation
 
 ### Code
 - **Commentaires Doxygen** : Documentation complète des classes et méthodes
@@ -451,7 +419,7 @@ Le projet est **autonome** et contient toutes les dépendances :
 
 ---
 
-## 🐛 Dépannage
+##  Dépannage
 
 ### Erreur "CMake not found"
 - **Windows** : Installez CMake et ajoutez-le au PATH
@@ -469,36 +437,6 @@ Le projet est **autonome** et contient toutes les dépendances :
 ### Le jeu ne trouve pas les assets
 - Vérifiez que `build/assets/` existe
 - Lancez le jeu depuis le dossier racine
-
----
-
-## 📝 Exemple de Configuration
-
-Fichier `config/config.json` :
-
-```json
-{
-  "simulation": {
-    "vehicleCount": 15,
-    "eventCount": 1,
-    "timeScale": 1.0,
-    "mode": "DYNAMIC"
-  },
-  "graph": {
-    "nodes": [
-      {"id": 0, "x": 0, "y": 0},
-      {"id": 1, "x": 100, "y": 0}
-    ],
-    "routes": [
-      {"id": 0, "from": 0, "to": 1, "length": 100, "speed": 60, "capacity": 20}
-    ]
-  },
-  "events": {
-    "interval": 30.0,
-    "types": ["ACCIDENT", "TRAFFIC_JAM", "ROAD_CLOSURE", "EMERGENCY"]
-  }
-}
-```
 
 ---
 
