@@ -1,0 +1,48 @@
+# Répertoires de build
+build/
+cmake-build-*/
+
+# Fichiers CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+*.cmake
+!CMakeLists.txt
+
+# Fichiers compilés
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Dossiers d'IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Exécutables de test
+test_*
+*_test
+
+# Fichiers temporaires
+*.tmp
+*.log
+*.bak
+
+# Spécifiques à l'OS
+Thumbs.db
+.DS_Store
+
+# Garder external/raylib (dépendances)
+!external/

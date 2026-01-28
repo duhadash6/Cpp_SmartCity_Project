@@ -1,0 +1,32 @@
+{
+  "simulation": {
+    "vehicleCount": 15,
+    "eventCount": 1,
+    "timeScale": 1.0,
+    "mode": "DYNAMIC"
+  },
+  "graph": {
+    "nodes": [
+      {"id": 0, "x": 0, "y": 0},
+      {"id": 1, "x": 100, "y": 0},
+      {"id": 2, "x": 200, "y": 0},
+      {"id": 3, "x": 0, "y": 100},
+      {"id": 4, "x": 100, "y": 100},
+      {"id": 5, "x": 200, "y": 100}
+    ],
+    "routes": [
+      {"id": 0, "from": 0, "to": 1, "length": 100, "speed": 60, "capacity": 20},
+      {"id": 1, "from": 1, "to": 2, "length": 100, "speed": 60, "capacity": 20},
+      {"id": 2, "from": 0, "to": 3, "length": 100, "speed": 60, "capacity": 20},
+      {"id": 3, "from": 1, "to": 4, "length": 100, "speed": 60, "capacity": 20},
+      {"id": 4, "from": 2, "to": 5, "length": 100, "speed": 60, "capacity": 20},
+      {"id": 5, "from": 3, "to": 4, "length": 100, "speed": 60, "capacity": 20},
+      {"id": 6, "from": 4, "to": 5, "length": 100, "speed": 60, "capacity": 20}
+    ]
+  },
+  "events": {
+    "interval": 30.0,
+    "types": ["ACCIDENT", "TRAFFIC_JAM", "ROAD_CLOSURE", "EMERGENCY"]
+  }
+}
+
